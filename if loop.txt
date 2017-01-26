@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	
+	int price = 12;
+	std::string currency = "INR";
+	
+	if(price > 100 && currency == "USD")
+	std::cout << "Expensive" << std::endl;
+	else if(currency == "INR" && price > 100000) \\ both has be true
+	std::cout << "Expensive" << std::endl;
+	else if(currency == "GOLD" || price>500000)  \\ one of then has to be true
+	    std::cout << "Its Expensive" << std::endl;
+	else
+	    std::cout << "its cheap";
+	    
+	return 0;
+}
